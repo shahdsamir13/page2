@@ -1,0 +1,80 @@
+/* start header*/
+.container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      min-height: 97px;   
+  }
+  header .container ::after{
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: #e7e0e6;
+      bottom: 0;
+      width: calc(100% - 50px);
+      left: 15px;
+  }
+  header .logo img{
+      height: 100px;
+  }
+  header  nav {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end ;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+  }
+  header nav ul li a {
+      padding: 40px 10px;
+      display: block;
+      color: #f1eff1;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+      position: relative;
+      z-index: 2;
+  }
+  header nav ul li a:hover {
+      color: #c33740;
+      border-bottom: 1px solid #c33740;
+  }
+  /*end header*/
+  body {
+  background-image: url(img/marvel12.jpg);
+  background-size: cover;
+  }
+  /* Start info */
+  .information {
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  .information h1 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #d2c4c4;
+  }
+  .information p {
+    font-size: 14px;
+    line-height: 2;
+    color: #d2c4c4;
+  }
+  .information button{
+    border-radius: 12px;
+    background-color: #302eba;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+  }
+  .information button:hover {
+    opacity: 1
+}
+  /* End info */
